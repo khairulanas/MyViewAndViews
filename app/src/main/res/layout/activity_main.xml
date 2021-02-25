@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:id="@+id/activity_main"
     android:layout_width="match_parent"
@@ -19,28 +20,29 @@
                 android:layout_height="wrap_content"
                 android:adjustViewBounds="true"
                 android:src="@drawable/pixel_google"
-                android:scaleType="fitXY"/>
+                android:scaleType="fitXY"
+                android:contentDescription="@string/app_name" />
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:padding="8dp"
-                android:text="6 Photos"
+                android:text="@string/_6_photos"
                 android:gravity="center_vertical"
-                android:drawableLeft="@drawable/ic_collections_white_18dp"
                 android:drawablePadding="4dp"
                 android:textAppearance="@style/TextAppearance.AppCompat.Small"
                 android:background="#4D000000"
                 android:textColor="@android:color/white"
-                android:layout_marginLeft="16dp"
+                android:layout_marginStart="16dp"
                 android:layout_marginBottom="16dp"
-                android:layout_gravity="bottom" />
+                android:layout_gravity="bottom"
+                app:drawableStartCompat="@drawable/ic_collections_white_18dp" />
         </FrameLayout>
 
         <TextView
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:textSize="32sp"
-            android:text="$735"
+            android:text="@string/_735"
             android:layout_marginLeft="16dp"
             android:layout_marginRight="16dp"
             android:layout_marginTop="16dp"
@@ -49,7 +51,7 @@
         <TextView
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="Stock hanya 5 buah"
+            android:text="@string/stock_hanya_5_buah"
             android:textSize="12sp"
             android:layout_marginLeft="16dp"
             android:layout_marginRight="16dp"
@@ -67,7 +69,7 @@
         <TextView
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="Spesifikasi"
+            android:text="@string/spesifikasi"
             android:textSize="12sp"
             android:layout_marginLeft="16dp"
             android:layout_marginRight="16dp"
@@ -86,8 +88,8 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:textSize="14sp"
-                    android:layout_marginRight="16dp"
-                    android:text="Display"/>
+                    android:layout_marginEnd="16dp"
+                    android:text="@string/display"/>
                 <TextView
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
@@ -104,8 +106,8 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:textSize="14sp"
-                    android:layout_marginRight="16dp"
-                    android:text="Size"/>
+                    android:layout_marginEnd="16dp"
+                    android:text="@string/size"/>
                 <TextView
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
@@ -122,8 +124,8 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:textSize="14sp"
-                    android:layout_marginRight="16dp"
-                    android:text="Battery"/>
+                    android:layout_marginEnd="16dp"
+                    android:text="@string/battery"/>
                 <TextView
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
@@ -137,7 +139,7 @@
         <TextView
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="Dijual oleh"
+            android:text="@string/dijual_oleh"
             android:textSize="12sp"
             android:layout_marginLeft="16dp"
             android:layout_marginRight="16dp"
@@ -154,19 +156,19 @@
                 android:src="@drawable/photo_2"
                 android:layout_centerVertical="true"
                 android:id="@+id/profile_image"
-                android:layout_marginRight="16dp"/>
+                android:layout_marginEnd="16dp"/>
             <TextView
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_toRightOf="@id/profile_image"
-                android:text="Narenda Wicaksono"
+                android:layout_toEndOf="@id/profile_image"
+                android:text="@string/narenda_wicaksono"
                 android:textColor="@android:color/black"
                 android:layout_centerVertical="true"/>
         </RelativeLayout>
         <Button
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="Beli"
+            android:text="@string/beli"
             android:layout_marginLeft="16dp"
             android:layout_marginRight="16dp"
             android:layout_marginBottom="16dp"/>
